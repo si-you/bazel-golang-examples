@@ -17,6 +17,12 @@ If you are running this in MacOSX, you need to cross-compile the docker image
 targeting linux & amd64 architecture.
 
 ```bash
+bazel run -c opt \
+  --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 \
+  :hello_image
+```
+
+```bash
 bazel build \
   -c opt \
   --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 \
