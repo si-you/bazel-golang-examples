@@ -8,8 +8,8 @@ bazel run -c opt :hello_image
 Or build and load into the docker
 
 ```bash
-bazel build -c opt :hello.tar
-sudo docker load -i bazel-bin/hello.tar
+bazel build -c opt :hello_image.tar
+sudo docker load -i bazel-bin/hello_image.tar
 sudo docker run bazel:hello_image
 ```
 
@@ -19,9 +19,9 @@ targeting linux & amd64 architecture.
 ```bash
 bazel build \
   -c opt \
-  --platform=@io_bazel_rules_go//go/toolchain:linux_amd64\
-  :hello.tar
-docker load -i bazel-bin/hello.tar
+  --platforms=@io_bazel_rules_go//go/toolchain:linux_amd64 \
+  :hello_image.tar
+docker load -i bazel-bin/hello_image.tar
 docker run bazel:hello_image
 ```
 
