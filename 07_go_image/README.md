@@ -1,4 +1,4 @@
-# 07. Hello go image.
+# Hello go image.
 
 Run with bazel.
 ```bash

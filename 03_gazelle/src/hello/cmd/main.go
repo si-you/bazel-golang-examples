@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
+	"hello"
 )
 
 func main() {
-	fmt.Printf("Hello Bazel!\n")
+	fmt.Printf("%s\n", hello.Message())
 }

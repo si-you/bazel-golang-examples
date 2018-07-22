@@ -1,4 +1,4 @@
-# 05. Protobuf.
+# Protobuf.
 
 Run with bazel.
 ```bash

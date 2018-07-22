@@ -1,4 +1,4 @@
-# 01. Hello bazel.
+# Hello bazel.
 
 Run with bazel.
 ```bash
